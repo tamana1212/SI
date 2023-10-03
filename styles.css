@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*, *::after, *::before{
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,73 +10,83 @@
     scroll-behavior: smooth;
 }
 
-.container{
+.container {
     max-width: 1280px;
     padding: 0 20px;
     margin: 0 auto;
 }
 
-.row{
+.row {
     display: flex;
 }
 
-.col_6{
+.col_6 {
     width: 50%;
 }
 
-input{
+input {
     border: none;
     outline: none;
 }
 
 
-button{
+button {
     outline: none;
     border: none;
     cursor: pointer;
     font-family: Poppins;
 }
 
-a{
+a {
     text-decoration: none;
     cursor: pointer;
     font-family: Poppins;
 }
 
-ul, ol, li{
+ul,
+ol,
+li {
     list-style: none;
 }
 
-.rowrev{
+.rowrev {
     flex-direction: row-reverse;
 }
 
 /* -------------  Header Section  ------------- */
 
-.header_container{
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+}
+
+.header_container {
     height: 125px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.nav_list{
+.nav_list {
     display: flex;
     gap: 60px;
     align-items: center;
 }
 
-.nav_list span a{
+.nav_list span a {
     font-size: 16px;
     color: #000;
     transition: 0.3s ease-in-out;
 }
 
-.nav_list span a:hover{
+.nav_list span a:hover {
     color: #DF0031;
 }
 
-.nav_list .anchor_btn{
+.nav_list .anchor_btn {
     font-size: 13px;
     font-weight: 400;
     color: #DF0031;
@@ -85,23 +97,23 @@ ul, ol, li{
     transition: 0.3s ease-in-out;
 }
 
-.nav_list .anchor_btn:hover{
+.nav_list .anchor_btn:hover {
     background-color: #DF0031;
     color: #fff;
 }
 
 /* -------------  Hero Section  ------------- */
 
-.hero_section{
+.hero_section {
     background: #FFF5F7;
     padding-block: 60px;
 }
 
-.hero_container{
+.hero_container {
     align-items: center;
 }
 
-.hero_container .hero_text h1{
+.hero_container .hero_text h1 {
     font-size: 50px;
     font-weight: 500;
     line-height: 75px;
@@ -109,11 +121,11 @@ ul, ol, li{
     margin-bottom: 30px;
 }
 
-.hero_container .hero_text h1 span{
+.hero_container .hero_text h1 span {
     color: #DF0031;
 }
 
-.hero_container .hero_text p{
+.hero_container .hero_text p {
     font-size: 16px;
     line-height: 30px;
     color: #5C5C5C;
@@ -121,12 +133,12 @@ ul, ol, li{
     margin-bottom: 50px;
 }
 
-.hero_container .hero_text .hero_btns{
+.hero_container .hero_text .hero_btns {
     display: flex;
     gap: 15px;
 }
 
-.hero_container .hero_text .hero_btns .anchor_btn{
+.hero_container .hero_text .hero_btns .anchor_btn {
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
@@ -139,49 +151,49 @@ ul, ol, li{
     text-align: center;
 }
 
-.hero_container .hero_text .hero_btns .anchor_btn.filled{
+.hero_container .hero_text .hero_btns .anchor_btn.filled {
     color: #FFF;
     background-color: #DF0031;
 }
 
-.hero_container .hero_img{
+.hero_container .hero_img {
     text-align: end;
 }
 
 /* --------------------  Why Section  ---------------- */
 
-.why_section{
+.why_section {
     padding-block: 120px;
 }
 
 
-.why_container{
+.why_container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.why_container h2{
+.why_container h2 {
     font-size: 40px;
     font-weight: 500;
     color: #000;
 }
 
-.swiper{
+.swiper {
     width: 100%;
     display: flex;
     justify-content: center;
     padding-block: 60px;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
     width: 100%;
     height: 470px;
     display: flex;
     align-items: center;
 }
 
-.swiper .card{
+.swiper .card {
     border-radius: 8px;
     border: 1px solid #A0A0A0;
     background: #FFF;
@@ -191,60 +203,60 @@ ul, ol, li{
     flex-direction: column;
 }
 
-.swiper .card img{
+.swiper .card img {
     width: 100%;
     max-height: 250px;
 }
 
-.swiper .card h3{
+.swiper .card h3 {
     font-size: 20px;
     font-weight: 500;
     color: #222;
     margin-block: 4px 10px;
 }
 
-.swiper .card p{
+.swiper .card p {
     color: #444;
     font-size: 14px;
     line-height: 24px;
 }
 
-.swiper-slide:not(.swiper-slide-active){
+.swiper-slide:not(.swiper-slide-active) {
     opacity: 0.5;
 }
 
-.swiper-slide-active{
+.swiper-slide-active {
     transform: scale(1.1) !important;
 }
 
 /* -----------  Our Services Section  ------------ */
 
-.services_section{
+.services_section {
     padding-block: 60px;
     background: #FFF5F7;
 }
 
-.services_container{
+.services_container {
     display: flex;
     flex-direction: column;
     gap: 50px;
     align-items: center;
 }
 
-.services_container h2{
+.services_container h2 {
     color: #000;
     font-weight: 500;
     font-size: 40px;
 }
 
-.services_container .services_cards{
+.services_container .services_cards {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 25px;
 }
 
-.services_container .services_card{
+.services_container .services_card {
     width: 30%;
     display: flex;
     align-items: center;
@@ -252,7 +264,7 @@ ul, ol, li{
     gap: 8px;
 }
 
-.services_card .card_icon{
+.services_card .card_icon {
     height: 90px;
     width: 90px;
     background-color: #fff;
@@ -261,17 +273,17 @@ ul, ol, li{
     place-items: center;
 }
 
-.services_card:hover .card_icon{
+.services_card:hover .card_icon {
     filter: drop-shadow(1px 2px 11px rgba(223, 0, 49, 0.25));
 }
 
-.services_card h3{
+.services_card h3 {
     color: #000;
     font-size: 20px;
     font-weight: 500;
 }
 
-.services_card p{
+.services_card p {
     text-align: center;
     font-size: 14px;
     line-height: 24px;
@@ -281,25 +293,25 @@ ul, ol, li{
 
 /* -----------  IELTS Section  ----------- */
 
-.contact_banner{
+.contact_banner {
     position: relative;
 }
 
-.contact_banner .bg_1{
+.contact_banner .bg_1 {
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
 }
 
-.contact_banner .bg_2{
+.contact_banner .bg_2 {
     position: absolute;
     top: 0;
     right: 0;
 
 }
 
-.contact_banner_bg{
+.contact_banner_bg {
     position: absolute;
     left: 0;
     right: 0;
@@ -308,23 +320,23 @@ ul, ol, li{
     object-fit: contain;
 }
 
-.contact_container{
+.contact_container {
     display: flex;
     padding-block: 40px;
     gap: 30px;
     height: 383px;
 }
 
-.contact_content{
+.contact_content {
     width: 60%;
     position: relative;
 }
 
-.contact_img{
+.contact_img {
     width: 30%;
 }
 
-.contact_content h2{
+.contact_content h2 {
     text-align: center;
     font-size: 40px;
     margin-block-end: 30px;
@@ -332,33 +344,33 @@ ul, ol, li{
     color: #222;
 }
 
-.contact_content h2 span{
+.contact_content h2 span {
     color: #DF0031;
     font-weight: 700;
     font-size: 40px;
 
 }
 
-.contact_content li{
+.contact_content li {
     font-family: Poppins;
     font-size: 18px;
-    line-height: 24px; 
+    line-height: 24px;
     align-items: center;
     color: #222;
 }
 
-.contact_points{
+.contact_points {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     row-gap: 30px;
 }
 
-.contact_points li{
+.contact_points li {
     display: flex;
     gap: 12px;
 }
 
-.contact_banner a{
+.contact_banner a {
     height: 52px;
     border-radius: 5px;
     width: 201px;
@@ -378,31 +390,31 @@ ul, ol, li{
 
 /* -------------  Apart Section  ------------- */
 
-.apart_section{
+.apart_section {
     padding-block: 80px;
 }
 
-.apart_container{
+.apart_container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
 }
 
-.apart_container h2{
+.apart_container h2 {
     font-size: 40px;
     font-weight: 500;
     color: #000;
 }
 
-.apart_container .apart_cards{
+.apart_container .apart_cards {
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.apart_container .apart_card{
+.apart_container .apart_card {
     border: 1px solid #FFE7ED;
     background: #FFF;
     border-radius: 8px;
@@ -414,83 +426,84 @@ ul, ol, li{
     min-height: 445px;
 }
 
-.apart_container .apart_card:hover{
+.apart_container .apart_card:hover {
     box-shadow: 1px 2px 11px 0px rgba(223, 0, 49, 0.10);
 }
 
-.apart_container .apart_card img{
+.apart_container .apart_card img {
     max-height: 200px;
     width: 100%;
 }
 
-.apart_container .apart_card h3{
+.apart_container .apart_card h3 {
     margin-block: 25px 10px;
     color: #000;
     font-size: 20px;
     font-weight: 500;
 }
 
-.apart_container .apart_card p{
+.apart_container .apart_card p {
     color: #5C5C5C;
     text-align: center;
     font-size: 14px;
-    line-height: 24px; 
+    line-height: 24px;
 }
 
 /* ------------  Serve  --------------- */
 
-.serve{
+.serve {
     background: #FFF5F7;
     padding-block: 20px 60px;
 }
-.serveHead{
+
+.serveHead {
     text-align: center;
     font-size: 40px;
     margin-top: 30px;
 }
 
-.serveCard{
-    gap:25px;
+.serveCard {
+    gap: 25px;
     margin-top: 100px;
 }
 
-.serveCardData{
+.serveCardData {
     flex-direction: column;
-    gap:25px;
+    gap: 25px;
 }
 
-.serveData{
+.serveData {
     flex-direction: column;
-    gap:8px;
+    gap: 8px;
 }
 
 .serveData h5 {
     display: flex;
-    gap:4px;
+    gap: 4px;
     font-size: 20px;
     font-weight: 400;
 }
 
-.serveData p{
+.serveData p {
     color: #5C5C5C;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; 
+    line-height: 28px;
 }
 
-.serveData p span{
+.serveData p span {
     font-weight: 500;
-    
+
 }
 
-.scrollbox{
+.scrollbox {
     max-height: 250px;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
     gap: 8px;
-  
+
 }
 
 .scrollbox::-webkit-scrollbar {
@@ -500,30 +513,30 @@ ul, ol, li{
 
 /* ----------------- Testimonial Section ------------------ */
 
-.carousel_2{
+.carousel_2 {
     padding-block: 90px;
 }
 
-.testimonial_container{
+.testimonial_container {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
 
-.testimonial_container .testimonial_frame{
+.testimonial_container .testimonial_frame {
     position: absolute;
     top: 43%;
 }
 
-.testimonial_container > h2{
+.testimonial_container>h2 {
     color: #222;
     font-size: 40px;
     font-weight: 600;
     line-height: 48px;
 }
 
-.testimonial_container > p{
+.testimonial_container>p {
     color: #444;
     text-align: center;
     font-size: 20px;
@@ -533,12 +546,12 @@ ul, ol, li{
 }
 
 .owl-carousel {
-    display: flex; 
+    display: flex;
     max-width: 952px;
     margin: 0 auto;
 }
 
-.carousel_2 .item1{
+.carousel_2 .item1 {
     padding: 15px;
     position: relative;
     /* max-width: 840px; */
@@ -546,7 +559,7 @@ ul, ol, li{
     justify-content: center;
 }
 
-.carousel_2 .item1 .testimonial_upper_comma{
+.carousel_2 .item1 .testimonial_upper_comma {
     position: absolute;
     width: 36px;
     height: 29px;
@@ -555,7 +568,7 @@ ul, ol, li{
     transform: rotate(5deg);
 }
 
-.carousel_2 .item1 .testimonial_lower_comma{
+.carousel_2 .item1 .testimonial_lower_comma {
     position: absolute;
     width: 36px;
     height: 29px;
@@ -564,7 +577,7 @@ ul, ol, li{
 }
 
 
-.carousel_2 .item1 .inner_testimonial_frame{
+.carousel_2 .item1 .inner_testimonial_frame {
     display: flex;
     flex-direction: column;
     gap: 19px;
@@ -576,30 +589,30 @@ ul, ol, li{
     max-width: 860px;
 }
 
-.carousel_2 .item1 p{
+.carousel_2 .item1 p {
     text-align: center;
     color: #222;
     text-align: center;
-    line-height: 30px; 
-    font-size: 14px;   
-    max-width: 750px; 
+    line-height: 30px;
+    font-size: 14px;
+    max-width: 750px;
 }
 
-.carousel_2 .item1 .profile{
+.carousel_2 .item1 .profile {
     display: flex;
     flex-direction: column;
     gap: 4px;
     align-items: center;
 }
 
-.carousel_2 .item1 .profile p{
+.carousel_2 .item1 .profile p {
     color: #292D34;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
 }
 
-.carousel_2 .item1 .profile .dp{
+.carousel_2 .item1 .profile .dp {
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -619,45 +632,45 @@ ul, ol, li{
     bottom: 0;
 }
 
-.owl-dots{
+.owl-dots {
     display: none;
 }
 
 /* -----------  Newsletter Section  ----------- */
 
-.newsletter_section{
+.newsletter_section {
     background: #FFF5F7;
     backdrop-filter: blur(30px);
     padding-block: 45px 90px;
     position: relative;
 }
 
-.newsletter_section .lines_1{
+.newsletter_section .lines_1 {
     position: absolute;
     left: 0;
     top: 0;
 }
 
-.newsletter_section .lines_2{
+.newsletter_section .lines_2 {
     position: absolute;
     right: 0;
     top: 0;
 }
 
-.newsletter_container{
+.newsletter_container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.newsletter_container h2{
+.newsletter_container h2 {
     font-size: 40px;
     line-height: 48px;
     color: #2B2B2B;
 }
 
-.newsletter_container p{
-    color:#5B5B5B;
+.newsletter_container p {
+    color: #5B5B5B;
     text-align: center;
     font-size: 20px;
     line-height: 28px;
@@ -665,12 +678,12 @@ ul, ol, li{
     margin-block: 20px 60px;
 }
 
-.newsletter_container form{
+.newsletter_container form {
     display: flex;
     justify-content: center;
 }
 
-.newsletter_container form .input_field{
+.newsletter_container form .input_field {
     border-radius: 10px 0 0 10px;
     background: #FFF;
     box-shadow: 1px 3px 10px 0px rgba(223, 0, 49, 0.10);
@@ -679,11 +692,11 @@ ul, ol, li{
     gap: 6px;
 }
 
-.newsletter_container form .input_field input{
+.newsletter_container form .input_field input {
     width: 400px;
 }
 
-.newsletter_container form .input_field input::placeholder{
+.newsletter_container form .input_field input::placeholder {
     font-size: 22px;
     font-weight: 500;
     letter-spacing: 0.66px;
@@ -691,7 +704,7 @@ ul, ol, li{
     opacity: 0.45;
 }
 
-.newsletter_container form button{
+.newsletter_container form button {
     border-radius: 10px;
     background: #DF0031;
     color: #FFF;
@@ -702,7 +715,7 @@ ul, ol, li{
     transform: translateX(-8px);
 }
 
-.newsletter_container form .input_field input{
+.newsletter_container form .input_field input {
     font-size: 20px;
     line-height: 28px;
     color: var(--dark-gray, #5B5B5B);
@@ -711,32 +724,34 @@ ul, ol, li{
 /* ---------------  Footer Section  --------------- */
 
 
-.footerWrapper{
-    gap:100px;
+.footerWrapper {
+    gap: 100px;
     margin-top: 80px;
 }
 
-.footer1 .footer2{
+.footer1 .footer2 {
     display: flex;
     flex-direction: column;
 }
 
-.footer1{
+.footer1 {
     width: 370px;
 }
-.footer1 p{
+
+.footer1 p {
     color: #5C5C5C;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
 }
-.footerLogos{
-    gap:20px;
+
+.footerLogos {
+    gap: 20px;
     margin-top: 47px;
     margin-bottom: 42px;
 }
 
-.footerLogos .logo_frame{
+.footerLogos .logo_frame {
     height: 40px;
     width: 40px;
     border: 1px solid #FB5F66;
@@ -746,32 +761,32 @@ ul, ol, li{
     transition: 0.3s ease-in-out;
 }
 
-.footerLogos .logo_frame:hover{
+.footerLogos .logo_frame:hover {
     background-color: #FB5F66;
     filter: drop-shadow(3px 6px 20px rgba(0, 0, 0, 0.25));
 }
 
-.footerLogos .logo_frame:hover svg{
+.footerLogos .logo_frame:hover svg {
     transition: 0.3s ease-in-out;
 }
 
-.footerLogos .logo_frame:hover svg path{
+.footerLogos .logo_frame:hover svg path {
     fill: #fff;
 }
 
-.footer2{
+.footer2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.footer2  h5{
+.footer2 h5 {
     color: #1C345A;
     font-size: 30px;
     font-weight: 600;
 }
 
-.footer2 ul{
+.footer2 ul {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -783,25 +798,25 @@ ul, ol, li{
     font-weight: 400;
 }
 
-.subFooter{
+.subFooter {
     margin-top: 37px;
 }
 
-.subFooter p{
+.subFooter p {
     color: #1C345A;
     font-size: 15px;
     font-style: normal;
     font-weight: 300;
 }
 
-.subFooterend{
+.subFooterend {
     gap: 40px;
     margin-top: 22px;
     margin-bottom: 48px;
- 
+
 }
 
-.subFooterend a{
+.subFooterend a {
     color: #1C345A;
     font-size: 18px;
     font-weight: 400;
