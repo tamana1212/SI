@@ -638,6 +638,88 @@ header {
 
 /* -----------  Newsletter Section  ----------- */
 
+.getintouch {
+    display: flex;
+    gap: 60px;
+}
+
+.getinTouch_form {
+    padding: 30px;
+    background: #FFF;
+    box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.10);
+    width: 70%;
+    position: relative;
+}
+
+.getinTouch_form button {
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid #FFC107;
+    background: #DF0031;
+    padding: 12px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    bottom: 30px;
+    width: calc(100% - 60px);
+
+}
+
+.getinTouch_form form {
+    display: flex;
+    gap: 30px;
+}
+
+.getintouch h4 {
+    margin-block-end: 24px;
+}
+
+.form_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+}
+
+.form_input,
+.form_textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.getinTouch_form form label {
+    color: #222;
+    font-size: 16px;
+    line-height: 27.2px;
+    /* 170% */
+}
+
+.form_input input {
+    border-radius: 4px;
+    border: 1px solid #CED4DA;
+    background: #FFF;
+    padding: 13px;
+}
+
+.form_input input::placeholder {
+    color: #97A3AE;
+    font-size: 14px;
+}
+
+.form_textarea textarea {
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #CED4DA;
+    background: #FFF;
+    resize: none;
+}
+
+.call_div {
+    width: 30%;
+}
+
 .newsletter_section {
     background: #FFF5F7;
     backdrop-filter: blur(30px);
@@ -660,13 +742,15 @@ header {
 .newsletter_container {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .newsletter_container h2 {
-    font-size: 40px;
-    line-height: 48px;
-    color: #2B2B2B;
+    color: #DF0031;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.4px;
+    /* 120% */
+    text-align: center;
 }
 
 .newsletter_container p {
@@ -675,51 +759,55 @@ header {
     font-size: 20px;
     line-height: 28px;
     max-width: 730px;
-    margin-block: 20px 60px;
+    margin-block: 20px 40px;
+    text-align: center;
+    margin-inline: auto;
+
 }
 
-.newsletter_container form {
-    display: flex;
-    justify-content: center;
-}
-
-.newsletter_container form .input_field {
-    border-radius: 10px 0 0 10px;
+.call_div {
+    padding: 30px;
     background: #FFF;
-    box-shadow: 1px 3px 10px 0px rgba(223, 0, 49, 0.10);
-    padding: 16px 24px;
-    display: flex;
-    gap: 6px;
+    box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.10);
 }
 
-.newsletter_container form .input_field input {
-    width: 400px;
-}
-
-.newsletter_container form .input_field input::placeholder {
-    font-size: 22px;
+.call_div h4,
+.getintouch h4 {
+    color: #DF0031;
+    font-size: 28px;
     font-weight: 500;
-    letter-spacing: 0.66px;
-    color: #655757;
-    opacity: 0.45;
+    line-height: 33.6px;
+    /* 120% */
 }
 
-.newsletter_container form button {
-    border-radius: 10px;
-    background: #DF0031;
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0.6px;
-    width: 200px;
-    transform: translateX(-8px);
+
+.call_div p {
+    color: #444;
+    font-size: 16px;
+    line-height: 27.2px;
+    /* 170% */
+    margin-block: 24px 20px;
+    text-align: left;
 }
 
-.newsletter_container form .input_field input {
-    font-size: 20px;
-    line-height: 28px;
-    color: var(--dark-gray, #5B5B5B);
+.call_div a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #222;
+    font-size: 16px;
+    line-height: 27.2px;
+    /* 170% */
+    text-decoration-line: underline;
 }
+
+.call_div .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
 
 /* ---------------  Footer Section  --------------- */
 
