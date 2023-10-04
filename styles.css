@@ -114,7 +114,7 @@ header {
 }
 
 .hero_container .hero_text h1 {
-    font-size: 50px;
+    font-size: 48px;
     font-weight: 500;
     line-height: 75px;
     color: #000;
@@ -138,7 +138,7 @@ header {
     gap: 15px;
 }
 
-.hero_container .hero_text .hero_btns .anchor_btn {
+.hero_container .hero_text .hero_btns .anchor_btn , .why_section .anchor_btn{
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
@@ -149,6 +149,10 @@ header {
     width: 193px;
     padding-block: 9px;
     text-align: center;
+}
+
+.why_section .anchor_btn{
+    margin-top: 10px;
 }
 
 .hero_container .hero_text .hero_btns .anchor_btn.filled {
@@ -500,6 +504,7 @@ header {
 .scrollbox {
     max-height: 250px;
     overflow-y: scroll;
+    overscroll-behavior: auto;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -554,7 +559,6 @@ header {
 .carousel_2 .item1 {
     padding: 15px;
     position: relative;
-    /* max-width: 840px; */
     display: flex;
     justify-content: center;
 }
@@ -663,10 +667,9 @@ header {
     line-height: 18px;
     bottom: 30px;
     width: calc(100% - 60px);
-
 }
 
-.getinTouch_form form {
+.form_main {
     display: flex;
     gap: 30px;
 }
@@ -693,7 +696,6 @@ header {
     color: #222;
     font-size: 16px;
     line-height: 27.2px;
-    /* 170% */
 }
 
 .form_input input {
@@ -714,6 +716,11 @@ header {
     border: 1px solid #CED4DA;
     background: #FFF;
     resize: none;
+    padding: 13px;
+}
+
+.gform {
+    height: 100%;
 }
 
 .call_div {
@@ -749,7 +756,6 @@ header {
     font-size: 42px;
     font-weight: 600;
     line-height: 50.4px;
-    /* 120% */
     text-align: center;
 }
 
@@ -762,7 +768,6 @@ header {
     margin-block: 20px 40px;
     text-align: center;
     margin-inline: auto;
-
 }
 
 .call_div {
@@ -777,7 +782,6 @@ header {
     font-size: 28px;
     font-weight: 500;
     line-height: 33.6px;
-    /* 120% */
 }
 
 
@@ -785,7 +789,6 @@ header {
     color: #444;
     font-size: 16px;
     line-height: 27.2px;
-    /* 170% */
     margin-block: 24px 20px;
     text-align: left;
 }
@@ -797,7 +800,6 @@ header {
     color: #222;
     font-size: 16px;
     line-height: 27.2px;
-    /* 170% */
     text-decoration-line: underline;
 }
 
@@ -806,6 +808,39 @@ header {
     flex-direction: column;
     gap: 10px;
 }
+
+.thankyou_message {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #DF0031;
+    background: #FFF;
+    padding: 40px 40px 0px 40px;
+}
+
+.thankyou_message img {
+    max-width: 300px;
+}
+
+.thankyou_message h2 {
+    color: #DF0031;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.4px;
+}
+
+.thankyou_message p {
+    color: #DF0031;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26.4px;
+    margin-top: 10px !important;
+}
+
+
+
 
 
 
@@ -832,7 +867,7 @@ header {
     font-weight: 400;
     line-height: 26px;
 }
-
+/* 
 .footerLogos {
     gap: 20px;
     margin-top: 47px;
@@ -860,6 +895,10 @@ header {
 
 .footerLogos .logo_frame:hover svg path {
     fill: #fff;
+} */
+
+hr{
+    margin-top: 20px;
 }
 
 .footer2 {

@@ -30,7 +30,7 @@
     <main class="hero_section">
       <div class="container hero_container row">
         <div class="hero_text col_6">
-          <h1>Welcome to <span>SI Overseas</span></h1>
+          <h1>Welcome to <span>SI Overseas </span>Your Goals, Our Guidance </h1>
           <p>
             At SI Overseas Consultancy, we are dedicated to helping individuals
             achieve their dreams of studying and working abroad. Our expert team
@@ -97,6 +97,7 @@
             </div>
           </div>
         </div>
+         <a href="" class="anchor_btn">View more</a>
       </div>
     </section>
 
@@ -621,29 +622,34 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
         </p>
        <div class="getintouch">
         <div class="getinTouch_form">
-             <h4>Whats up?</h4>
-         <form>
-    
-         <div class="form_inputs">
+             <h4 class="getintouch_heading">Whats up?</h4>
+         <form  class="gform" id="gform" method="POST"  action="https://script.google.com/macros/s/AKfycbyCaAIi1Le38G7D_96CqVXDKujSzRlH9uB8oSOJv11fQfwy5hOTjXu50L24LAH2KHIFWA/exec">
+          <div style="display:none" class="thankyou_message">
+ <h2>Your request has been submitted </h2>
+ <p>Thanks for your time</p>
+ <img src="assets/time.svg" alt="person on laptop near hourglass">
+</div>
+         <div class="form_main">
+          <div class="form_inputs">
            <div class="form_input">
             <label for="">Name (required)</label>
-          <input type="text" name="" id="" placeholder="Full Name">
+          <input type="text" name="name" id="" placeholder="Full Name">
           </div>
            <div class="form_input">
             <label for="">Email (required)</label>
-          <input type="text" name="" id="" placeholder="Email address">
+          <input type="text" name="email" id="" placeholder="Email address">
            </div>
            <div class="form_input">
             <label for="">Subject (required)</label>
-          <input type="text" name="" id="" placeholder="Subject">
+          <input type="text" name="subject" id="" placeholder="Subject">
            </div>
-         </div>
-     
+         </div>     
          <div class="form_textarea">
           <label for="">Comment</label>
-          <textarea name="" id="" cols="55" rows="10"></textarea>
+          <textarea name="comment" id="" cols="55" rows="10"></textarea>
          </div>
          <button type="submit">Contact Me</button>
+         </div>
 
         </form>
            </div>
@@ -669,7 +675,7 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
          <div class="footer1">
           <a href="./index.html"><img src="./assets/WhatsApp Image 2023-09-28 at 9.58 3.svg"/></a>
           <p>At SI Overseas Consultancy, we are dedicated to helping individuals achieve their dreams of studying and working abroad. </p>
-
+<!-- 
           <div class="footerLogos row">
               <a class="logo_frame">
           <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -697,7 +703,7 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
                   <path d="M15.0524 10.528L10.8926 7.75488C10.7882 7.6852 10.6668 7.64519 10.5414 7.63911C10.416 7.63304 10.2913 7.66113 10.1806 7.72038C10.0699 7.77964 9.97742 7.86783 9.91295 7.97556C9.84848 8.08329 9.81447 8.2065 9.81455 8.33204V13.8784C9.81447 14.0039 9.84848 14.1271 9.91295 14.2348C9.97742 14.3426 10.0699 14.4308 10.1806 14.49C10.2913 14.5493 10.416 14.5774 10.5414 14.5713C10.6668 14.5652 10.7882 14.5252 10.8926 14.4555L15.0524 11.6824C15.1475 11.6191 15.2254 11.5333 15.2794 11.4326C15.3333 11.3319 15.3616 11.2194 15.3616 11.1052C15.3616 10.991 15.3333 10.8785 15.2794 10.7778C15.2254 10.6771 15.1475 10.5913 15.0524 10.528ZM11.2011 12.5828V9.63196L13.4179 11.1052L11.2011 12.5828ZM21.1091 6.03725C21.0275 5.71777 20.871 5.42228 20.6527 5.17517C20.4343 4.92806 20.1604 4.7364 19.8534 4.616C16.8827 3.46861 12.1544 3.47901 11.8944 3.47901C11.6344 3.47901 6.9062 3.46861 3.93545 4.616C3.62846 4.7364 3.3545 4.92806 3.13616 5.17517C2.91783 5.42228 2.76138 5.71777 2.67972 6.03725C2.45527 6.90213 2.18835 8.48283 2.18835 11.1052C2.18835 13.7276 2.45527 15.3083 2.67972 16.1732C2.76126 16.4928 2.91765 16.7885 3.13599 17.0357C3.35434 17.283 3.62836 17.4748 3.93545 17.5953C6.78141 18.6933 11.2358 18.7314 11.8372 18.7314H11.9516C12.5531 18.7314 17.01 18.6933 19.8534 17.5953C20.1605 17.4748 20.4345 17.283 20.6529 17.0357C20.8712 16.7885 21.0276 16.4928 21.1091 16.1732C21.3336 15.3065 21.6005 13.7276 21.6005 11.1052C21.6005 8.48283 21.3336 6.90213 21.1091 6.03725ZM19.7667 15.83C19.7403 15.9363 19.6891 16.0349 19.6172 16.1176C19.5454 16.2003 19.455 16.2647 19.3534 16.3058C16.6105 17.3648 11.9456 17.3457 11.9005 17.3457H11.8944C11.8476 17.3457 7.18611 17.363 4.44155 16.3058C4.33996 16.2647 4.24953 16.2003 4.17767 16.1176C4.10582 16.0349 4.05459 15.9363 4.02817 15.83C3.81759 15.0388 3.57494 13.5811 3.57494 11.1052C3.57494 8.62929 3.81759 7.17165 4.02211 6.38476C4.04803 6.27781 4.09904 6.17856 4.17092 6.09522C4.2428 6.01189 4.33349 5.94686 4.43548 5.90552C7.08039 4.88379 11.5122 4.86559 11.8754 4.86559H11.8988C11.9456 4.86559 16.6114 4.84999 19.3516 5.90552C19.4532 5.94653 19.5437 6.01102 19.6155 6.09372C19.6874 6.17642 19.7386 6.27497 19.765 6.3813C19.9713 7.17165 20.2139 8.62929 20.2139 11.1052C20.2139 13.5811 19.9713 15.0388 19.7667 15.8256V15.83Z" fill="#FB5F66"/>
                   </svg>     
               </a>
-          </div>
+          </div> -->
 
          </div>
          <div class="footer2">
@@ -732,6 +738,7 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+     <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         loop: true,
@@ -796,5 +803,120 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
         })
         
     </script>
+    <script>
+
+      (function() {
+  // get all data in form and return object
+  function getFormData(form) {
+    var elements = form.elements;
+    var honeypot;
+
+    var fields = Object.keys(elements).filter(function(k) {
+      if (elements[k].name === "honeypot") {
+        honeypot = elements[k].value;
+        return false;
+      }
+      return true;
+    }).map(function(k) {
+      if(elements[k].name !== undefined) {
+        return elements[k].name;
+      // special case for Edge's html collection
+      }else if(elements[k].length > 0){
+        return elements[k].item(0).name;
+      }
+    }).filter(function(item, pos, self) {
+      return self.indexOf(item) == pos && item;
+    });
+
+    var formData = {};
+    fields.forEach(function(name){
+      var element = elements[name];
+      
+      // singular form elements just have one value
+      formData[name] = element.value;
+
+      // when our element has multiple items, get their values
+      if (element.length) {
+        var data = [];
+        for (var i = 0; i < element.length; i++) {
+          var item = element.item(i);
+          if (item.checked || item.selected) {
+            data.push(item.value);
+          }
+        }
+        formData[name] = data.join(', ');
+      }
+    });
+
+    // add form-specific values into the data
+    formData.formDataNameOrder = JSON.stringify(fields);
+    formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
+    formData.formGoogleSendEmail
+      = form.dataset.email || ""; // no email by default
+
+    return {data: formData, honeypot: honeypot};
+  }
+
+  function handleFormSubmit(event) {  // handles form submit without any jquery
+    event.preventDefault();           // we are submitting via xhr below
+    var form = event.target;
+    var formData = getFormData(form);
+    var data = formData.data;
+
+    // If a honeypot field is filled, assume it was done so by a spam bot.
+    if (formData.honeypot) {
+      return false;
+    }
+
+    disableAllButtons(form);
+    var url = form.action;
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    // xhr.withCredentials = true;
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          form.reset();
+          var formElements = form.querySelector(".form-elements")
+          let formMain = form.querySelector(".form_main")
+          if (formElements) {
+            formElements.style.display = "none"; // hide form
+          }
+          var thankYouMessage = form.querySelector(".thankyou_message");
+          var getinTouchHeading =  document.querySelector(".getintouch_heading");
+          if (thankYouMessage) {
+            thankYouMessage.style.display = "flex";
+            formMain.style.display = "none";
+            getinTouchHeading.style.display = "none";
+
+
+          }
+        }
+    };
+    // url encode form data for sending as post data
+    var encoded = Object.keys(data).map(function(k) {
+        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+    }).join('&');
+    xhr.send(encoded);
+  }
+  
+  function loaded() {
+    // bind to the submit event of our form
+    var forms = document.querySelectorAll("form.gform");
+    for (var i = 0; i < forms.length; i++) {
+      forms[i].addEventListener("submit", handleFormSubmit, false);
+    }
+  };
+  document.addEventListener("DOMContentLoaded", loaded, false);
+
+  function disableAllButtons(form) {
+    var buttons = form.querySelectorAll("button");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].disabled = true;
+    }
+  }
+})();
+    </script>
+   
   </body>
 </html>
