@@ -19,11 +19,26 @@
         </a>
         <nav class="nav_list">
           <span><a href="#home">Home</a></span>
-          <span><a href="#about">About us</a></span>
+          <span><a href="./about.html" target="_blank">About us</a></span>
           <span><a href="#services">Services</a></span>
           <span><a href="#testimonial">Testimonial</a></span>
           <a href="#contact" class="anchor_btn">Contact us</a>
         </nav>
+
+          <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="#home">Home</a></li>
+      <li><a class="menu__item" href="./about.html">About us</a></li>
+      <li><a class="menu__item" href="#services">Services</a></li>
+      <li><a class="menu__item" href="#testimonial">Testimonial</a></li>
+      <li><a class="menu__item" href="#contact">Contact us</a></li>
+    </ul>
+  </div>
       </div>
     </header>
 
@@ -630,7 +645,7 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
  <img src="assets/time.svg" alt="person on laptop near hourglass">
 </div>
          <div class="form_main">
-          <div class="form_inputs">
+          <div class="form_inputs col_6">
            <div class="form_input">
             <label for="">Name (required)</label>
           <input type="text" name="name" id="" placeholder="Full Name" required>
@@ -644,13 +659,15 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
           <input type="text" name="subject" id="" placeholder="Subject" required>
            </div>
          </div>     
-         <div class="form_textarea">
-          <label for="">Comment</label>
-          <textarea name="comment" id="" cols="55" rows="10"></textarea>
+         <div class="form_textarea col_6">
+         <div class="textarea_form">
+           <label for="">Comment</label>
+          <textarea name="comment" id="" rows="10"></textarea>
          </div>
-         <button type="submit">Contact Me</button>
          </div>
-
+       
+         </div>
+           <button type="submit">Contact Me</button>
         </form>
            </div>
         <div class="call_div">
@@ -739,40 +756,43 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
      <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: true,
+   <script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 1000,
+    },
+    autoplayHoverPause: true,
 
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 3,
-        spaceBetween: 50,
-        coverflowEffect: {
-          rotate: 0,
-          stretch: 0,
-          depth: 5,
-          modifier: 1,
-          slideShadows: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-    //     breakpoints: {
-    //   480: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 40,
-    //   },
-    //   640: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 50,
-    //   }
-    // },
-      });
-    </script>
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 5,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    breakpoints: {
+    620: {
+      slidesPerView: 2,
+      spaceBetween: 50
+    },
+    938:{
+      slidesPerView: 3,
+      spaceBetween: 50
+    }
+  }
+  });
+</script>
+
+
     <script>
         $('.owl-carousel').owlCarousel({
           loop: true,

@@ -68,6 +68,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .nav_list {
@@ -100,6 +101,83 @@ header {
 .nav_list .anchor_btn:hover {
     background-color: #DF0031;
     color: #fff;
+}
+
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  right: 0 !important;
+}
+.menu__btn {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 46px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -13px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 13px;
+}
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.hamburger-menu{
+    display: none;
 }
 
 /* -------------  Hero Section  ------------- */
@@ -329,12 +407,12 @@ header {
     display: flex;
     padding-block: 40px;
     gap: 30px;
-    height: 383px;
 }
 
 .contact_content {
     width: 60%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact_img {
@@ -362,6 +440,7 @@ header {
     line-height: 24px;
     align-items: center;
     color: #222;
+    white-space: nowrap;
 }
 
 .contact_points {
@@ -387,8 +466,6 @@ header {
     line-height: 24px;
     display: grid;
     place-items: center;
-    position: absolute;
-    bottom: 0;
     transform: translate(100%);
     margin-top: 40px;
 }
@@ -643,6 +720,7 @@ header {
 
 /* -----------  Newsletter Section  ----------- */
 
+
 .getintouch {
     display: flex;
     gap: 60px;
@@ -683,8 +761,12 @@ header {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 50%;
 }
+
+.textarea_form{
+    width: 100%;
+}
+
 
 .form_input,
 .form_textarea {
@@ -713,6 +795,7 @@ header {
 
 .form_textarea textarea {
     height: 100%;
+    width: 100%;
     border-radius: 4px;
     border: 1px solid #CED4DA;
     background: #FFF;
@@ -859,7 +942,7 @@ header {
 }
 
 .footer1 {
-    width: 370px;
+    max-width: 370px;
 }
 
 .footer1 p {
@@ -1000,19 +1083,18 @@ hr {
     height: 51px;
 }
 
+
+
 @media (min-width:760px) and (max-width:1000px) {
+
     .aboutCard img {
         width: 280px !important;
 
     }
 
-    .serveCard img {
-        width: 240px;
-
-    }
-
     .serveCard {
         margin-top: 70px;
+        flex-direction: column;
     }
 
     .aboutCard,
@@ -1051,15 +1133,19 @@ hr {
         line-height: 48px;
     }
 
-    .hero_container .hero_img img {
-        width: 300px;
+    .hero_container .hero_img img , .serveCard img{
+        max-width: 300px;
     }
 
     .services_card h3 {
         text-align: center;
     }
+     .serveCardImg{
+        display: grid;
+        place-items: center;
+    }
 
-    .apart_container .apart_card p {
+    .apart_container .apart_card p , .testimonial_container>p{
         font-size: 12px;
         line-height: 18px;
     }
@@ -1068,7 +1154,7 @@ hr {
         font-size: 16px;
     }
 
-    .apart_container h2 {
+    .apart_container h2, .testimonial_container>h2, .newsletter_container h2, .why_container h2 {
         font-size: 31px;
     }
 
@@ -1079,16 +1165,64 @@ hr {
     .serveHead {
         font-size: 30px;
     }
-}
 
-@media (max-width:760px) {
-    .serveCard {
+    .apart_card{
+        width:40%;
+    }
+
+    .call_div, .getinTouch_form{
+        width: 50%;
+    }
+
+    .form_main{
         flex-direction: column;
     }
 
-    .serveCard img {
-        width: 180px;
+    .form_textarea , .form_inputs{
+        width: 100%;
+    }
+     .form_textarea {
+        margin-block-end: 50px;
+     }
 
+     .getintouch{
+        gap:30px;
+     }
+}
+
+@media (max-width:760px) {
+    .subFooterend{
+        gap:20px;
+    }
+    .services_card h3 {
+        text-align: center;
+    }
+
+    .hero_container, .getintouch, .footerWrapper,  .subFooterend{
+        flex-direction: column;
+    }
+    .hero_img, .hero_text, .services_container .services_card, .getinTouch_form, .form_textarea, .call_div{
+        width: 100%;
+    }
+    .hero_container .hero_img {
+        text-align: left;
+    }
+    .hero_container .hero_img img, .serveCard img{
+        max-width: 300px;
+    }
+
+    .serveCardImg{
+        display: grid;
+        place-items: center;
+    }
+
+    .hero_container .hero_text h1 {
+        font-size: 31px;
+        line-height: 48px;
+    }
+
+    .serveCard {
+        flex-direction: column;
     }
 
     .serveCard {
@@ -1117,4 +1251,51 @@ hr {
         height: 41px;
     }
 
+     .apart_container .apart_card, .form_inputs{
+        width:100%;
+    }
+
+    .apart_container h2,.testimonial_container>h2, .newsletter_container h2, .why_container h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .apart_container .apart_card h3, .testimonial_container>p , .newsletter_container p{
+        font-size: 18px;
+    }
+    .testimonial_container>p, .newsletter_container p{
+        margin-block-end: 20px;
+    }
+
+    .form_main{
+        margin-bottom: 60px;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 787px){
+    .nav_list{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 938px){
+    .owl-nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .swiper .card{
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 1086px){
+    .contact_content li{
+        white-space: unset;
+    }
 }
