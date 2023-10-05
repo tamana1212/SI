@@ -42,7 +42,7 @@
       </div>
     </header>
 
-    <main class="hero_section">
+    <main class="hero_section" id="main_section" >
       <div class="container hero_container row">
         <div class="hero_text col_6">
           <h1>Welcome to <span>SI Overseas </span>Your Goals, Our Guidance </h1>
@@ -585,9 +585,7 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
             <div class=" carousel_owl owl-carousel">
                 <div class="item1">
                     <div class="inner_testimonial_frame">
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. </p>
+                      <p>SI Overseas Consultancy is exceptional! Their expertise and support helped me achieve my dream of studying abroad. Highly recommended!</p>
                     <div class="profile">
                         <img class="dp" src="./assets/testimonial_dp1.svg" alt="">
                         <p>Jonathan A.</p>
@@ -599,9 +597,7 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
                 </div>
                 <div class="item1">
                   <div class="inner_testimonial_frame">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                      industry's standard dummy text Lorem Ipsum is simply dummy text of the printing and typesetting
-                      industry. </p>
+                    <p>SI Overseas Consultancy is truly outstanding. Their guidance and dedication made my international education dreams come true. Thank you immensely!</p>
                   <div class="profile">
                       <img class="dp" src="./assets/testimonial_dp1.svg" alt="">
                       <p>Jonathan A.</p>
@@ -638,7 +634,7 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
        <div class="getintouch">
         <div class="getinTouch_form">
              <h4 class="getintouch_heading">Whats up?</h4>
-         <form  class="gform" id="gform" method="POST"  action="https://script.google.com/macros/s/AKfycbyCaAIi1Le38G7D_96CqVXDKujSzRlH9uB8oSOJv11fQfwy5hOTjXu50L24LAH2KHIFWA/exec">
+         <form  class="gform" id="gform" method="POST"  action="https://script.google.com/macros/s/AKfycbxiGsVeitCk2bUFjoMRmg3xlQfHZI41TSIX1yqHRqFWsKFaET-5s-uKYk9Zm9zaw90Ihw/exec">
           <div style="display:none" class="thankyou_message">
  <h2>Your request has been submitted </h2>
  <p>Thanks for your time</p>
@@ -667,7 +663,7 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
          </div>
        
          </div>
-           <button type="submit">Contact Me</button>
+           <button type="submit" class="form_btn">Contact Me</button>
         </form>
            </div>
         <div class="call_div">
@@ -726,10 +722,10 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
          <div class="footer2">
           <h5>Links</h5>
           <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Our Process</a></li>
-              <li><a href="">Service</a></li>
+              <li><a href="#main_section">Home</a></li>
+              <li><a href="./about.html" target="_blank">About Us</a></li>
+              <li><a href="#about">Our Process</a></li>
+              <li><a href="#services">Service</a></li>
           </ul>
          </div>
       </div>
@@ -899,6 +895,7 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
           form.reset();
           var formElements = form.querySelector(".form-elements")
           let formMain = form.querySelector(".form_main")
+          let formBtn = form.querySelector(".form_btn")
           if (formElements) {
             formElements.style.display = "none"; // hide form
           }
@@ -908,8 +905,7 @@ Embark on a journey of academic excellence with SI Overseas Consultancy's Educat
             thankYouMessage.style.display = "flex";
             formMain.style.display = "none";
             getinTouchHeading.style.display = "none";
-
-
+            formBtn.style.display = "none";
           }
         }
     };
