@@ -138,7 +138,8 @@ header {
     gap: 15px;
 }
 
-.hero_container .hero_text .hero_btns .anchor_btn , .why_section .anchor_btn{
+.hero_container .hero_text .hero_btns .anchor_btn,
+.why_section .anchor_btn {
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
@@ -151,7 +152,7 @@ header {
     text-align: center;
 }
 
-.why_section .anchor_btn{
+.why_section .anchor_btn {
     margin-top: 10px;
 }
 
@@ -867,6 +868,7 @@ header {
     font-weight: 400;
     line-height: 26px;
 }
+
 /* 
 .footerLogos {
     gap: 20px;
@@ -897,7 +899,7 @@ header {
     fill: #fff;
 } */
 
-hr{
+hr {
     margin-top: 20px;
 }
 
@@ -948,4 +950,171 @@ hr{
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
+}
+
+
+/* About Page */
+
+.headAbout {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 45px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.headAbout2 {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.aboutCard {
+    gap: 150px !important;
+    align-items: center;
+}
+
+
+.aboutCard p {
+    color: #222;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.aboutCard p span {
+    font-weight: 600;
+}
+
+.aboutCard h2 {
+    color: #DF0031;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.aboutCard button {
+    border-radius: 10px;
+    background: #DF0031;
+    color: white;
+    width: 193px;
+    height: 51px;
+}
+
+@media (min-width:760px) and (max-width:1000px) {
+    .aboutCard img {
+        width: 280px !important;
+
+    }
+
+    .serveCard img {
+        width: 240px;
+
+    }
+
+    .serveCard {
+        margin-top: 70px;
+    }
+
+    .aboutCard,
+    .serveCard {
+        gap: 50px !important;
+    }
+
+    .headAbout {
+        font-size: 32px;
+    }
+
+    .aboutCard p {
+        font-size: 15px;
+    }
+
+    .footerWrapper {
+        margin-top: 50px;
+    }
+
+    .footer2 h5 {
+        font-size: 25px;
+    }
+
+    .subFooterend {
+        gap: 35px;
+        margin-top: 13px;
+        margin-bottom: 48px;
+    }
+
+    .subFooterend a {
+        font-size: 16px;
+    }
+
+    .hero_container .hero_text h1 {
+        font-size: 31px;
+        line-height: 48px;
+    }
+
+    .hero_container .hero_img img {
+        width: 300px;
+    }
+
+    .services_card h3 {
+        text-align: center;
+    }
+
+    .apart_container .apart_card p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .apart_container .apart_card h3 {
+        font-size: 16px;
+    }
+
+    .apart_container h2 {
+        font-size: 31px;
+    }
+
+    .serveData p {
+        line-height: 23px;
+    }
+
+    .serveHead {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:760px) {
+    .serveCard {
+        flex-direction: column;
+    }
+
+    .serveCard img {
+        width: 180px;
+
+    }
+
+    .serveCard {
+        margin-top: 30px;
+    }
+
+    .aboutCard,
+    .serveCard {
+        gap: 30px !important;
+    }
+
+    .headAbout {
+        font-size: 25px;
+    }
+
+    .aboutCard p {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .aboutCard button {
+        border-radius: 10px;
+        background: #DF0031;
+        color: white;
+        width: 134px;
+        height: 41px;
+    }
+
 }
