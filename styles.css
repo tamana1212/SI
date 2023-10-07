@@ -724,6 +724,7 @@ header {
 .getintouch {
     display: flex;
     gap: 60px;
+    z-index: 1;
 }
 
 .getinTouch_form {
